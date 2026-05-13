@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+<meta charset="UTF-8">
+<title>Cenovnik</title>
+<link rel="stylesheet" href="/style/style.css">
+</head>
+
+<body>
+
+<header id="navbar">
+  <h1>IronCore</h1>
+  <button id="menuBtn">☰</button>
+  <nav id="menu">
+    <a href="index.html">Početna</a>
+    <a href="cenovnik.html">Cenovnik</a>
+    <a href="kontakt.html">Kontakt</a>
+  </nav>
+</header>
+
+<section>
+  <h2>Cenovnik</h2>
+
+
+<select id="plan">
+    <option value="3000">1 mesec</option>
+    <option value="8000">3 meseca</option>
+    <option value="15000">6 meseci</option>
+  </select>
+  
+  <label>
+    <input type="checkbox" id="loyalty">
+    Imam loyalty karticu (20% popusta)
+  </label>
+  
+  <button id="calcBtn">Izračunaj cenu</button>
+  
+  <p id="cena"></p>
+
+<script src="/script/script.js"></script>
+</body>
+</html>
