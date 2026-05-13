@@ -1,0 +1,120 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #0a0a0a;
+    color: white;
+  }
+  
+.hero h2 {
+    font-size: 50px;
+    font-weight: bold;
+    letter-spacing: 3px;
+  }
+
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    position: fixed;
+    width: 90%;
+  }
+  
+  nav {
+    display: flex;
+    gap: 20px;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  #menuBtn {
+    display: none;
+  }
+
+
+  .hero {
+    height: 750px;
+    background: url("/images/hero.jpg") center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+
+  section {
+    padding: 100px 20px;
+    text-align: center;
+    right: 100px;
+  }
+  
+
+  #services, .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    gap: 20px;
+  }
+  
+  .card {
+    background: #111;
+    padding: 20px;
+  }
+  
+  .card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+
+  .about-images img {
+    width: 45%;
+    margin: 10px;
+  }
+  
+
+  .contact-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+  }
+  
+  input, textarea, select {
+    margin: 10px 0;
+    padding: 10px;
+  }
+  
+
+  @media(max-width:768px){
+    nav {
+      display: none;
+      flex-direction: column;
+      background: black;
+      position: absolute;
+      right: 0;
+      top: 60px;
+    }
+  
+    nav.show {
+      display: flex;
+    }
+  
+    #menuBtn {
+      display: block;
+    }
+  }
+  
+
+  .dark {
+    background: white;
+    color: black;
+  }
